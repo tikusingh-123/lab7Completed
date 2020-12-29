@@ -1,0 +1,18 @@
+input {
+    border: 1px solid black;
+}
+input:invalid {
+    border: 1px solid red;
+}
+
+body {
+    padding: 10px;
+    margin: 2px;
+}
+
+form {
+    padding: 35px;
+    margin: 15px;
+    border: 2px solid aqua;
+    border-radius: 5em;
+}

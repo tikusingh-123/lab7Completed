@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="./form.css">        
+    </head>
+    <body>
+        <div id="browser">
+            You are using 
+        </div>
+        You are on this page since<div id="timespent"> </div>
+        <form onsubmit="return handleData(); loadSuccess();"> 
+            <label for="fname" id="name">Enter First Name: </label>
+            <input type="text" id="fname" required><br>
+
+            <label for="lname" id="name">Enter Last Name</label>
+            <input type="text" id="lname" required><br>
+
+            <label for="dob" id="dateOfBirth">Enter Date of Birth: </label>
+            <!--<input type="date" name="dateOfBirth" id="dob" max="1999-08-31" min="1990-12-31" required><br>-->
+            <input type="data" name="dateOfBirth" id="dob" max="31-09-1999" min="31-12-1990" placeholder="dd-mm-yyyy" required pattern="([0-9]{4}[-](0[1-9]|1[0-2])[-]([0-2]{1}[0-9]{1}|3[0-1]{1})|([0-2]{1}[0-9]{1}|3[0-1]{1})[-](0[1-9]|1[0-2])[-][0-9]{4})"><br>
+
+            <label for="mail" id="email">Enter Email ID: </label>
+            <input type="email" name="mailID" id="mail" required><br>
+
+            <div style="visibility:hidden; color:red; " id="chk_option_error">
+                Please select at least one option.
+            </div>
+
+
+       <input type="checkbox" name="hobby" value="reading" id="chk_option_error"> 
+            <label for="reading" id="hobby">Reading</label><br>
+
+            <input type="checkbox" name="hobby" value="movie" id="chk_option_error"> 
+            <label for="movie" id="hobby">Watching movies</label><br>
+
+            <input type="checkbox" name="hobby" value="photography" id="chk_option_error"> 
+            <label for="photography" id="hobby">Photography</label><br>
+            
+            
+            <label for="writer" id="hobby">Favorite Writer: </label>
+            <input type="text" id="writer">
+           
+
+
+            <!--<input type="submit" value="Submit" name="submit form">-->
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+        <script type="text/javascript" src="./form.js"></script>
+    </body>
+</html>
